@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 //3.declare bodyparser for take request and take data from body
 const bodyParser = require('body-parser');
 
+const items = require('./routes/api/items');
+
 //4.initialize express
 const app = express();
 
@@ -20,5 +22,9 @@ mongoose
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.log(err));
 
+//Use Routes
+app.use('/api/items', items);
+
 const port = process.env.PORT || 5000;
+
 app.listen(port, () => console.log(`server started on port ${port}`));
