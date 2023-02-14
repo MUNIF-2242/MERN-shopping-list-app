@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { v1 as uuid } from 'uuid';
 
 import {
   Button,
@@ -35,7 +34,6 @@ class ItemModal extends Component {
     e.preventDefault();
 
     const newItem = {
-      id: uuid(),
       name: this.state.name,
     };
 

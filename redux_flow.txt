@@ -1,0 +1,23 @@
+Step for redux in react project
+
+1.cd to client folder
+2.npm i redux react-redux redux-thunk
+3.create store.js file in client src folder
+4.to integrate store.js to our app we need provider.go to app.js 
+and import Provider from react-redux.also import store.js
+5.create a reducer folder and create index.js file.
+here we add all different reducer.
+6.create a itemReducer for this app.
+reducer is where our state is go.and here we check our action.
+7.create a action folder for action type.
+8.create switch case statement for action type.
+9.create itemActions.js file.
+10.import connect module for our shopping list item from redux.
+11.change export default form with connect().(component_name)
+connect function use two parameter
+all action type brought from redux are stored as props
+
+
+
+
+
