@@ -1,4 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://sbh:sbh2242@cluster0.vg5zpgz.mongodb.net/?retryWrites=true&w=majority",
+  "mongoURI": "mongodb+srv://MUNIF:PNHs75MIPjgp3jfv@cluster0.flz8pdk.mongodb.net/?retryWrites=true&w=majority",
   "jwtSecret": "mern_app_myjwttoken"
 }

@@ -4,11 +4,17 @@ import AppNavbar from './components/AppNavbar';
 import ShoppingList from './components/ShoppingList';
 import ItemModal from './components/ItemModal';
 import { Container } from 'reactstrap';
+import { useEffect } from 'react';
 
 import { Provider } from 'react-redux';
 import store from './store';
+import { loadUser } from './actions/authActions';
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    store.dispatch(loadUser());
+  }, []);
+
   return (
     <Provider store={store}>
       <div className='App'>
@@ -20,6 +26,6 @@ function App() {
       </div>
     </Provider>
   );
-}
+};
 
 export default App;
